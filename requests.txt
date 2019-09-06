@@ -1,0 +1,13 @@
+curl -i -X POST -H "Content-Type:application/json" -d '{"firstname": "Melkis", "lastname": "Hengue", "salary": 2100}' http://localhost:3000/employees/
+
+curl -i -X GET -H "Content-Type:application/json"  http://localhost:3000/employees/
+
+curl -i -X PUT -H "Content-Type:application/json" -d '{"firstname": "Melchisedek", "lastname": "Hengue", "salary": 2200}' http://localhost:3000/employees/1
+
+curl -i -X DELETE -H "Content-Type:application/json"  http://localhost:3000/employees/1
+
+
+
+curl -i -X GET -H "Content-Type:application/json"  http://localhost:3000/employees/4/addresses/
+
+curl -i -X POST -H "Content-Type:application/json" -d '{"street": "vogeliusweg", "number": 21, "zipcode": "33100", "city": "Paderborn"}' http://localhost:3000/employees/4/addresses/
